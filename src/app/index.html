@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Desafio CSS Grid</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<div>
+				<h1>Criar Pesquisa</h1>
+				<p>Crie pesquisas e acompanhe seus resultados</p>
+			</div>
+
+			<div>
+				<select name="" id="">
+					<option value="">16 de janeiro a 15 de fevereiro de 2018</option>
+				</select>
+			</div>
+		</header>
+
+		<nav>
+			<ul>
+				<li>
+					<a href="#">Pesquisas</a>
+				</li>
+			</ul>
+		</nav>
+
+		<main>
+			<section id="steps-section">
+				<div id="steps-container" class="linear-container">
+					<div class="steps-item">
+						<span>1</span>
+						<p>Qual</p>
+					</div>
+
+					<div class="steps-item">
+						<span>2</span>
+						<p>Níveis</p>
+					</div>
+
+					<div class="steps-item">
+						<span>3</span>
+						<p>Pesquisa</p>
+					</div>
+
+					<div class="steps-item">
+						<span>4</span>
+						<p>FEEDBACK</p>
+					</div>
+
+					<div class="steps-item disabled">
+						<span>5</span>
+						<p>QUANDO?</p>
+					</div>
+
+					<div class="steps-item">
+						<span>6</span>
+						<p>CONFIRMAR</p>
+					</div>
+				</div>
+			</section>
+
+			<section id="feedback-conf-section">
+				<article>
+					<h2>Configuração do feedback</h2>
+					<p>
+						Personalize e configure a página web que será aberta após o usuário acessar a pesquisa de pós-compra.
+					</p>
+				</article>
+
+				<article id="feedback-conf">
+					<h3>Feedback</h3>
+					<div>
+						<h2>Informações</h2>
+						<p>
+							Preencha os campos abaixo e visualize o resultado da tela.
+						</p>
+					</div>
+
+					<div id="feedback-container">
+						<div id="logo-conf">
+							<p>Imagem da logo:</p>
+							<div>
+								<figure>
+									<img src="logo/group-17.svg" alt="logo">
+									<button>Alterar logo</button>
+								</figure>
+
+								<p>Requisitos: dimensões
+									<span>100x50px</span>, tamanho máximo
+									<span>20k</span>, formato
+									<span>PNG transparente</span>
+								</p>
+							</div>
+						</div>
+
+						<div id="title-conf">
+							<p>Título:</p>
+							<div class="input-text">
+								<input type="text" placeholder="Pesquisa de satisfação">
+								<p>
+									<span>30</span>caracteres restantes
+								</p>
+							</div>
+						</div>
+
+						<div id="title-color-conf" class="color-input">
+							<p>Cor do texto do título:</p>
+							<div>
+								<input type="text" placeholder="#222F51">
+								<div></div>
+							</div>
+						</div>
+
+						<div id="grades-conf">
+							<p>Notas:</p>
+							<div>
+								<figure>
+									<img src="grades/horrivel.svg" alt="ícone horrível">
+									<caption>Horrível</caption>
+								</figure>
+								<button>Alterar ícone</button>
+							</div>
+
+							<div>
+								<figure>
+									<img src="grades/ruim.svg" alt="ícone ruim">
+									<caption>Ruim</caption>
+								</figure>
+								<button>Alterar ícone</button>
+							</div>
+
+							<div>
+								<figure>
+									<img src="grades/razoavel.svg" alt="ícone razoável">
+									<caption>Razoável</caption>
+								</figure>
+								<button>Alterar ícone</button>
+							</div>
+
+							<div>
+								<figure>
+									<img src="grades/muito-bom-copy.svg" alt="ícone muito bom">
+									<caption>Muito bom</caption>
+								</figure>
+								<button>Alterar ícone</button>
+							</div>
+
+							<div>
+								<figure>
+									<img src="grades/excelente.svg" alt="ícone excelente">
+									<caption>Excelente</caption>
+								</figure>
+								<button>Alterar ícone</button>
+							</div>
+							<p>
+								Requisitos: dimenções
+								<span>74x74px</span>, tamanho máximo
+								<span>20k</span>, formato
+								<span>PNG transparente</span>
+							</p>
+
+						</div>
+
+						<div id="grades-text-color-conf">
+							<p>Cor do texto das notas:</p>
+							<div class="color-input">
+								<input type="text" placeholder="#222F51">
+								<div></div>
+							</div>
+						</div>
+
+						<div id="comment-conf">
+							<p>Comentário:</p>
+							<div class="input-text">
+								<input type="text" placeholder="Gostaria de fornecer mais detalhes sobre o atendimento desta(e) vendedora(or)?">
+								<p>
+									<span>30</span>caracteres restantes
+								</p>
+							</div>
+						</div>
+
+						<div id="comment-text-color-conf">
+							<p>Cor do texto comentário:</p>
+							<div class="input-color">
+								<input type="text" placeholder="#8B93A7">
+								<div></div>
+							</div>
+						</div>
+
+						<div id="button-text-conf">
+							<p>Botão:</p>
+							<div class="input-text">
+								<input type="text" placeholder="Responder pesquisa">
+								<p>
+									<span>100</span>caracteres restantes
+								</p>
+							</div>
+						</div>
+
+						<div id="button-text-color-conf">
+							<p>Cor do texto botão:</p>
+							<div class="input-color">
+								<input type="text" placeholder="#39C881">
+								<div></div>
+							</div>
+						</div>
+					</div>
+
+					<div id="button-bg-color-conf">
+						<p>Cor do fundo botão:</p>
+						<div class="input-color">
+							<input type="text" placeholder="#39C881">
+							<div></div>
+						</div>
+					</div>
+
+					<div id="screen-bg-color-conf">
+						<p>Cor do fundo da tela:</p>
+						<div class="input-color">
+							<input type="text" placeholder="#F5F6FA">
+							<div></div>
+						</div>
+					</div>
+
+					<div id="screen-bg-color-conf">
+							<p>Cor do box de conteúdo:</p>
+							<div class="input-color">
+								<input type="text" placeholder="#FFFFF">
+								<div></div>
+							</div>
+						</div>
+				</article>
+			</section>
+
+		</main>
+		<button>Passo Anterior</button>
+		<button>Salvar como rascunho</button>
+		<button>Próximo Passo</button>
+	</div>
+</body>
+
+</html>
