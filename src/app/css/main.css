@@ -1,0 +1,118 @@
+#search-page-conf *{
+  margin:0;
+  padding:0;
+  font-family: OpenSans;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;  
+  line-height: normal;
+  letter-spacing: normal;  
+  box-sizing: border-box;
+}
+
+#search-page-conf body{
+  width: 100%;
+  display: grid;  
+  justify-content:center;
+  background-color: #fff;
+}
+
+#search-page-conf #container{    
+  width: 70vw;
+  margin-left: 10vw;
+}
+
+#search-page-conf header{
+  margin-top: 5%;    
+  height: 36px;
+  display: grid;
+  grid-template-columns: 360px 327px;
+  grid-template-rows: 40px 50px;
+  justify-content: space-between;
+  align-items: center;  
+}
+
+#search-page-conf h1, #search-page-conf h2{
+  font-weight: 600;
+}
+
+#search-page-conf h1{  
+  width: 170px;  
+  font-size: 26px;
+  font-weight: 600;  
+  letter-spacing: -0.7px;
+  color: #525c5d;
+  
+}
+
+#search-page-conf header div div{
+  width: 1px;
+  background-color: #e6e6e6;
+  height: 28px;
+  margin-right: 13px; 
+}
+
+#search-page-conf header p{    
+  font-size: 12px;  
+  line-height: 1.33;  
+  color: #96a0a1;  
+  width: 166px;
+}
+#search-page-conf header div:first-child{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;  
+}
+
+#search-page-conf header select{
+  width: 327px;
+  border-radius: 2px;
+  border: solid 1px #e6e6e6;
+  background-color: #ffffff;
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+  color: #333333;
+  padding: 4.6%;
+}
+
+#search-page-conf nav{  
+  margin: 20px auto;
+  margin-left: -20px;
+  margin-bottom: 40px;
+}
+#search-page-conf nav ul{
+  list-style: none;
+}
+#search-page-conf nav li{  
+  width: 144px;
+  height: 54px;
+  background-color: #ffffff;
+  border-top: 2px solid #8acc54;  
+  text-align: center;
+  display: grid;
+  align-items: center;
+  
+}
+
+#search-page-conf nav ul li a{
+  text-decoration: none;
+  font-size: 11px;  
+  letter-spacing: -0.2px;
+  
+  color: #636363;  
+}
+
+#search-page-conf h2{
+  width: 827px;
+  height: 24px;
+  font-family: OpenSans;
+  font-size: 18px;  
+  letter-spacing: -0.5px;
+  color: #333333;  
+}
+
+#search-page-conf #steps-container {
+  margin: 35px auto;
+}
