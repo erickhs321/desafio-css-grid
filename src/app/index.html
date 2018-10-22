@@ -101,7 +101,7 @@
 			</section>
 
 			<section id="feedback-conf-section">
-				<article>
+				<article id="feedback-info">
 					<h2>Configuração do feedback</h2>
 					<p>
 						Personalize e configure a página web que será aberta após o usuário acessar a pesquisa de pós-compra.
@@ -111,21 +111,20 @@
 				<article id="feedback-conf">
 					<h3>Feedback</h3>
 					<div>
-						<h2>Informações</h2>
-						<p>
-							Preencha os campos abaixo e visualize o resultado da tela.
-						</p>
-					</div>
+							<h2>Informações</h2>
+							<p>
+								Preencha os campos abaixo e visualize o resultado da tela.
+							</p>
+						</div>
+					<div id="feedback-container">				
 
-					<div id="feedback-container">
-						<div id="logo-conf">
+						<div id="logo-conf" class="grid">
 							<p>Imagem da logo:</p>
 							<div>
 								<figure>
 									<img src="logo/group-17.svg" alt="logo">
 									<button>Alterar logo</button>
 								</figure>
-
 								<p>Requisitos: dimensões
 									<span>100x50px</span>, tamanho máximo
 									<span>20k</span>, formato
@@ -134,7 +133,7 @@
 							</div>
 						</div>
 
-						<div id="title-conf">
+						<div id="title-conf" class="grid">
 							<p>Título:</p>
 							<div class="input-text">
 								<input type="text" placeholder="Pesquisa de satisfação">
@@ -144,7 +143,7 @@
 							</div>
 						</div>
 
-						<div id="title-color-conf" class="color-input">
+						<div id="title-color-conf" class="color-input grid">
 							<p>Cor do texto do título:</p>
 							<div>
 								<input type="text" placeholder="#222F51">
@@ -152,7 +151,7 @@
 							</div>
 						</div>
 
-						<div id="grades-conf">
+						<div id="grades-conf" class="grid">
 							<p>Notas:</p>
 							<div>
 								<figure>
@@ -193,16 +192,16 @@
 								</figure>
 								<button>Alterar ícone</button>
 							</div>
+
 							<p>
 								Requisitos: dimenções
 								<span>74x74px</span>, tamanho máximo
 								<span>20k</span>, formato
 								<span>PNG transparente</span>
 							</p>
-
 						</div>
 
-						<div id="grades-text-color-conf">
+						<div id="grades-text-color-conf" class="grid">
 							<p>Cor do texto das notas:</p>
 							<div class="color-input">
 								<input type="text" placeholder="#222F51">
@@ -210,7 +209,7 @@
 							</div>
 						</div>
 
-						<div id="comment-conf">
+						<div id="comment-conf" class="grid">
 							<p>Comentário:</p>
 							<div class="input-text">
 								<input type="text" placeholder="Gostaria de fornecer mais detalhes sobre o atendimento desta(e) vendedora(or)?">
@@ -220,7 +219,7 @@
 							</div>
 						</div>
 
-						<div id="comment-text-color-conf">
+						<div id="comment-text-color-conf" class="grid">
 							<p>Cor do texto comentário:</p>
 							<div class="input-color">
 								<input type="text" placeholder="#8B93A7">
@@ -228,7 +227,7 @@
 							</div>
 						</div>
 
-						<div id="button-text-conf">
+						<div id="button-text-conf" class="grid">
 							<p>Botão:</p>
 							<div class="input-text">
 								<input type="text" placeholder="Responder pesquisa">
@@ -238,7 +237,7 @@
 							</div>
 						</div>
 
-						<div id="button-text-color-conf">
+						<div id="button-text-color-conf" class="grid">
 							<p>Cor do texto botão:</p>
 							<div class="input-color">
 								<input type="text" placeholder="#39C881">
@@ -247,7 +246,7 @@
 						</div>
 					</div>
 
-					<div id="button-bg-color-conf">
+					<div id="button-bg-color-conf" class="grid">
 						<p>Cor do fundo botão:</p>
 						<div class="input-color">
 							<input type="text" placeholder="#39C881">
@@ -255,7 +254,7 @@
 						</div>
 					</div>
 
-					<div id="screen-bg-color-conf">
+					<div id="screen-bg-color-conf" class="grid">
 						<p>Cor do fundo da tela:</p>
 						<div class="input-color">
 							<input type="text" placeholder="#F5F6FA">
@@ -263,7 +262,7 @@
 						</div>
 					</div>
 
-					<div id="screen-bg-color-conf">
+					<div id="screen-bg-color-conf" class="grid">
 						<p>Cor do box de conteúdo:</p>
 						<div class="input-color">
 							<input type="text" placeholder="#FFFFF">
@@ -271,7 +270,7 @@
 						</div>
 					</div>
 
-					<div id="satisfaction-screen">
+					<div id="satisfaction-screen" class="grid">
 						<figure>
 							<img src="logo/group-17.svg" alt="logo">
 						</figure>
@@ -338,9 +337,7 @@
 			</section>
 
 		</main>
-
 	</div>
-
 </body>
 
 </html>

@@ -41,8 +41,7 @@
   font-size: 26px;
   font-weight: 600;  
   letter-spacing: -0.7px;
-  color: #525c5d;
-  
+  color: #525c5d;  
 }
 
 #search-page-conf header div div{
@@ -68,8 +67,7 @@
   width: 327px;
   border-radius: 2px;
   border: solid 1px #e6e6e6;
-  background-color: #ffffff;
-  font-family: OpenSans;
+  background-color: #ffffff;  
   font-size: 14px;
   font-weight: 600;
   letter-spacing: -0.2px;
@@ -80,14 +78,15 @@
 #search-page-conf nav{  
   margin: 20px auto;
   margin-left: -20px;
-  margin-bottom: 40px;
 }
 #search-page-conf nav ul{
   list-style: none;
+  background-color: #f5f5f5;
+  height: 44px;  
 }
 #search-page-conf nav li{  
   width: 144px;
-  height: 54px;
+  height: 44px;
   background-color: #ffffff;
   border-top: 2px solid #8acc54;  
   text-align: center;
@@ -104,17 +103,16 @@
 
 #search-page-conf h2{
   width: 827px;
-  height: 24px;
-  font-family: OpenSans;
+  height: 24px; 
   font-size: 18px;  
   letter-spacing: -0.5px;
   color: #333333;  
 }
 
 #search-page-conf #steps-container {
-  margin: 35px auto;
+  margin: 20px auto;
   display: grid;
-  grid-template-columns:repeat(6, 150px)  
+  grid-template-columns:repeat(6, auto)  
 }
 
 #search-page-conf #steps-container .steps-item{
@@ -122,8 +120,7 @@
   grid-template-columns: auto auto;
   align-items: center;
   justify-content: space-between;  
-  height: 56px;
-  border-radius: 3px;  
+  height: 43px;    
   border: solid 1px #e8e8e8;
   border-left: 0;
   border-right: 0;
@@ -133,8 +130,16 @@
   border-left: solid 1px #e8e8e8;
   border-right: solid 1px #e8e8e8;
 }
-#search-page-conf #steps-container .steps-item:nth-child(6){
-  border-right: solid 1px #e8e8e8;
+
+#search-page-conf #steps-container .steps-item:last-of-type{
+  border-right: solid 1px #e8e8e8;  
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+#search-page-conf #steps-container .steps-item:first-of-type{   
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
 
 #search-page-conf #steps-container .steps-item > div{
@@ -182,8 +187,84 @@
 .disabled{
   background-color: #f7f7f7;   
 }
+
 .disabled p, .disabled > div{
   opacity: 0.25;
+}
+
+p{
+  font-size: 14px;  
+  letter-spacing: -0.2px;
+}
+#search-page-conf #feedback-conf-section article:nth-child(1) p{
+  color:#696969;
+  margin-top:-2px;
+}
+
+#search-page-conf #feedback-conf-section article:nth-child(1){    
+  margin-bottom: 27px;
+}
+
+#feedback-conf-section #feedback-conf{
+  background-color: #f7f7f7;  
+}
+#feedback-conf-section #feedback-conf,
+#feedback-conf-section #feedback-conf #feedback-container
+{
+  padding: 20px 23px;
+  border-radius: 6px;
+}
+
+#search-page-conf h3{
+  width: 54px;
+  height: 17px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+  color: #333333;
+  margin-bottom: 8px;
+}
+
+#feedback-container{
+  background-color: #fff; 
+}
+
+#feedback-container > div:nth-child(2){
+  margin: 20px auto;
+}
+
+#feedback-container > div:nth-child(1) p{
+  color:#696969;  
+}
+.grid{  
+  display: grid;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+}
+
+#logo-conf{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  display: flex;
+ }
+
+#title-conf{
+  grid-area: "title-conf";
+  background-color: red;
+}
+
+#satisfaction-screen{
+  display: flex;
+  background-color: yellow;
+}
+
+#feedback-container{ 
+  display: grid; 
+  grid-template-columns: 162px 177px 177px 177px 177px 177px;
+  grid-auto-rows: 80px;  
+  grid-row-gap: 10px;
 }
 
 
