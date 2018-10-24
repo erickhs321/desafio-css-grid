@@ -6,9 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Desafio CSS Grid</title>
 	<link rel="stylesheet" href="main.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
-	 crossorigin="anonymous">
-
 </head>
 
 <body>
@@ -110,7 +107,7 @@
 
 				<article id="feedback-conf">
 					<h3>Feedback</h3>
-					<div>
+					<div id="feedback-container-info">
 						<h2>Informações</h2>
 						<p>
 							Preencha os campos abaixo e visualize o resultado da tela.
@@ -122,7 +119,9 @@
 						<div class="gc-2to2">
 							<figure>
 								<img src="logo/group-17.svg" alt="logo">
-								<div class="m-10"><button>Alterar logo</button></div>
+								<div class="m-10">
+									<button>Alterar logo</button>
+								</div>
 							</figure>
 							<p>Requisitos: dimensões
 								<span>100x50px</span>, tamanho máximo
@@ -209,8 +208,7 @@
 							<div>
 								<h2>Pesquisa de satisfação</h2>
 								<p>
-									Responda a pesquisa abaixo sendo o mais sincero possível. Sua resposta e seus comentários ajudarão a construir
-									sempre o melhor
+									Responda a pesquisa abaixo sendo o mais sincero possível. Sua resposta e seus comentários ajudarão a construir sempre o melhor
 									produto para você.
 								</p>
 							</div>
@@ -256,6 +254,7 @@
 									</figure>
 								</div>
 							</div>
+							
 							<div>
 								<p>Gostaria de fornecer mais detalhes sobre o atendimento desta(e) vendedora(or)?</p>
 								<input type="text" placeholder="Escreva aqui">
@@ -267,21 +266,21 @@
 						</div>
 
 						<p class="gc-1to2">Comentário:</p>
-						<div class="input-text gc-2to5">
+						<div class="input-text gc-2to6">
 							<input type="text" placeholder="Gostaria de fornecer mais detalhes sobre o atendimento desta(e) vendedora(or)?">
 							<p>
 								<span>30</span>caracteres restantes
 							</p>
 						</div>
 
-						<p class="gc-5to6">Cor do texto comentário:</p>
-						<div class="input-color gc-6to7">
+						<p class="gc-6to7">Cor do texto comentário:</p>
+						<div class="input-color gc-7to8">
 							<input type="text" placeholder="#8B93A7">
 							<div></div>
 						</div>
 
 						<p class="gc-1to2">Botão:</p>
-						<div class="input-text gc-2to3">
+						<div class="input-text gc-1to3 button-span-2">
 							<input type="text" placeholder="Responder pesquisa">
 							<p>
 								<span>100</span>caracteres restantes
@@ -289,25 +288,25 @@
 						</div>
 
 						<p class="gc-3to4">Cor do texto botão:</p>
-						<div class="input-color gc-4to5">
+						<div class="input-color gc-5to6">
 							<input type="text" placeholder="#39C881">
 							<div></div>
 						</div>
 
-						<p class="gc-5to6">Cor do fundo botão:</p>
-						<div class="input-color gc-6to7">
+						<p class="gc-6to7">Cor do fundo botão:</p>
+						<div class="input-color gc-7to8">
 							<input type="text" placeholder="#39C881">
 							<div></div>
 						</div>
 
 						<p class="gc-1to2">Cor do fundo da tela:</p>
-						<div class="input-color gc-2to7">
+						<div class="input-color gc-2to8">
 							<input type="text" placeholder="#F5F6FA">
 							<div></div>
 						</div>
 
 						<p class="gc-1to2">Cor do box de conteúdo:</p>
-						<div class="input-color gc-2to7">
+						<div class="input-color gc-2to8">
 							<input type="text" placeholder="#FFFFF">
 							<div></div>
 						</div>
@@ -315,9 +314,8 @@
 
 				</article>
 			</section>
-
 		</main>
-	</div>
+		</div>
 </body>
 
 </html>
