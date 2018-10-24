@@ -116,10 +116,10 @@
 
 					<div id="feedback-container">
 						<p class="gc-1to2">Imagem da logo:</p>
-						<div class="gc-2to2">
+						<div class="gc-2to2" id="logo-conf">
 							<figure>
 								<img src="logo/group-17.svg" alt="logo">
-								<div class="m-10">
+								<div class="">
 									<button>Alterar logo</button>
 								</div>
 							</figure>
@@ -131,25 +131,25 @@
 						</div>
 
 						<p class="gc-1to2">Título:</p>
-						<div class="input-text gc-2to2">
+						<div class="input-text gc-2to2 row" id="title-conf">
 							<input type="text" placeholder="Pesquisa de satisfação">
-							<p>
-								<span>30</span>caracteres restantes
+							<p class="characters-remaining">
+								<span>30</span> caracteres restantes
 							</p>
 						</div>
 
 						<p class="gc-1to2">Cor do texto do título:</p>
-						<div class="gc-2to2">
+						<div class="gc-2to2 row" id="title-color-conf">
 							<input type="text" placeholder="#222F51">
-							<div></div>
+							<div class="color-square"></div>
 						</div>
 
 						<p class="gc-1to2">Notas:</p>
-						<div class="gc-2to2">
+						<div class="gc-2to2" id="container-emojis">
 							<div>
 								<figure>
 									<img src="grades/horrivel.svg" alt="ícone horrível">
-									<caption>Horrível</caption>
+									<p>Horrível</p>
 								</figure>
 								<button>Alterar ícone</button>
 							</div>
@@ -157,7 +157,7 @@
 							<div>
 								<figure>
 									<img src="grades/ruim.svg" alt="ícone ruim">
-									<caption>Ruim</caption>
+									<p>Ruim</p>
 								</figure>
 								<button>Alterar ícone</button>
 							</div>
@@ -165,7 +165,7 @@
 							<div>
 								<figure>
 									<img src="grades/razoavel.svg" alt="ícone razoável">
-									<caption>Razoável</caption>
+									<p>Razoável</p>
 								</figure>
 								<button>Alterar ícone</button>
 							</div>
@@ -173,7 +173,7 @@
 							<div>
 								<figure>
 									<img src="grades/muito-bom-copy.svg" alt="ícone muito bom">
-									<caption>Muito bom</caption>
+									<p>Muito bom</p>
 								</figure>
 								<button>Alterar ícone</button>
 							</div>
@@ -181,7 +181,7 @@
 							<div>
 								<figure>
 									<img src="grades/excelente.svg" alt="ícone excelente">
-									<caption>Excelente</caption>
+									<p>Excelente</p>
 								</figure>
 								<button>Alterar ícone</button>
 							</div>
@@ -195,9 +195,9 @@
 						</div>
 
 						<p class="gc-1to2"> Cor do texto das notas:</p>
-						<div class="color-input gc-2to2">
+						<div class="color-input gc-2to2 row" id="grades-text-color">
 							<input type="text" placeholder="#222F51">
-							<div></div>
+							<div class="color-square"></div>
 						</div>
 
 						<div id="satisfaction" class="gc-3to7">
@@ -208,7 +208,8 @@
 							<div>
 								<h2>Pesquisa de satisfação</h2>
 								<p>
-									Responda a pesquisa abaixo sendo o mais sincero possível. Sua resposta e seus comentários ajudarão a construir sempre o melhor
+									Responda a pesquisa abaixo sendo o mais sincero possível. Sua resposta e seus comentários ajudarão a construir
+									sempre o melhor
 									produto para você.
 								</p>
 							</div>
@@ -218,7 +219,7 @@
 									<figure>
 										<img src="" alt="">
 										<img src="" alt="">
-										<caption></caption>
+										<p></p>
 									</figure>
 								</div>
 
@@ -226,7 +227,7 @@
 									<figure>
 										<img src="" alt="">
 										<img src="" alt="">
-										<caption></caption>
+										<p></p>
 									</figure>
 								</div>
 
@@ -234,7 +235,7 @@
 									<figure>
 										<img src="" alt="">
 										<img src="" alt="">
-										<caption></caption>
+										<p></p>
 									</figure>
 								</div>
 
@@ -242,7 +243,7 @@
 									<figure>
 										<img src="" alt="">
 										<img src="" alt="">
-										<caption></caption>
+										<p></p>
 									</figure>
 								</div>
 
@@ -250,11 +251,11 @@
 									<figure>
 										<img src="" alt="">
 										<img src="" alt="">
-										<caption></caption>
+										<p></p>
 									</figure>
 								</div>
 							</div>
-							
+
 							<div>
 								<p>Gostaria de fornecer mais detalhes sobre o atendimento desta(e) vendedora(or)?</p>
 								<input type="text" placeholder="Escreva aqui">
@@ -266,56 +267,56 @@
 						</div>
 
 						<p class="gc-1to2">Comentário:</p>
-						<div class="input-text gc-2to6">
+						<div class="input-text gc-2to6 row" id="comment-conf">
 							<input type="text" placeholder="Gostaria de fornecer mais detalhes sobre o atendimento desta(e) vendedora(or)?">
-							<p>
-								<span>30</span>caracteres restantes
+							<p class="characters-remaining">
+								<span>30</span> caracteres restantes
 							</p>
 						</div>
 
 						<p class="gc-6to7">Cor do texto comentário:</p>
-						<div class="input-color gc-7to8">
+						<div class="input-color gc-7to8 row" id="comment-text-color">
 							<input type="text" placeholder="#8B93A7">
-							<div></div>
+							<div class="color-square"></div>
 						</div>
 
 						<p class="gc-1to2">Botão:</p>
-						<div class="input-text gc-1to3 button-span-2">
+						<div class="input-text gc-1to3 button-span-2 row" id="button-conf">
 							<input type="text" placeholder="Responder pesquisa">
-							<p>
-								<span>100</span>caracteres restantes
+							<p class="characters-remaining">
+								<span>100</span> caracteres restantes
 							</p>
 						</div>
 
 						<p class="gc-3to4">Cor do texto botão:</p>
-						<div class="input-color gc-5to6">
+						<div class="input-color gc-5to6 row" id="button-text-color">
 							<input type="text" placeholder="#39C881">
-							<div></div>
+							<div class="color-square"></div>
 						</div>
 
 						<p class="gc-6to7">Cor do fundo botão:</p>
-						<div class="input-color gc-7to8">
+						<div class="input-color gc-7to8 row" id="button-bg-color">
 							<input type="text" placeholder="#39C881">
-							<div></div>
+							<div class="color-square"></div>
 						</div>
 
 						<p class="gc-1to2">Cor do fundo da tela:</p>
-						<div class="input-color gc-2to8">
+						<div class="input-color gc-2to8 row" id="screen-color">
 							<input type="text" placeholder="#F5F6FA">
-							<div></div>
+							<div class="color-square"></div>
 						</div>
 
 						<p class="gc-1to2">Cor do box de conteúdo:</p>
-						<div class="input-color gc-2to8">
+						<div class="input-color gc-2to8 row">
 							<input type="text" placeholder="#FFFFF">
-							<div></div>
+							<div class="color-square"></div>
 						</div>
 					</div>
 
 				</article>
 			</section>
 		</main>
-		</div>
+	</div>
 </body>
 
 </html>
