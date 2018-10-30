@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br" id="search-page-conf">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Desafio CSS Grid</title>
-	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/main.css">
+	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous"> -->
 </head>
 
 <body>
-	<div class="container">
+	<div id="container">
 		<header>
 			<div>
 				<h1>Criar Pesquisa</h1>
+				<div></div>
 				<p>Crie pesquisas e acompanhe seus resultados</p>
 			</div>
 
@@ -27,48 +29,78 @@
 		<nav>
 			<ul>
 				<li>
-					<a href="#">Pesquisas</a>
+					<a href="#">PESQUISAS</a>
 				</li>
 			</ul>
 		</nav>
 
 		<main>
 			<section id="steps-section">
-				<div id="steps-container" class="linear-container">
+				<h2>Crie sua pesquisa em 6 passos simples</h2>
+				<div id="steps-container">
 					<div class="steps-item">
-						<span>1</span>
-						<p>Qual</p>
+						<div>
+							<div>
+								<span>1</span>
+							</div>
+							<p>QUAL?</p>
+						</div>
+						<img src="img/check-solid.svg" alt="ícone de completado">
 					</div>
 
 					<div class="steps-item">
-						<span>2</span>
-						<p>Níveis</p>
+						<div>
+							<div>
+								<span>2</span>
+							</div>
+							<p>NÍVEIS</p>
+						</div>
+						<img src="img/check-solid.svg" alt="ícone de completado">
 					</div>
 
 					<div class="steps-item">
-						<span>3</span>
-						<p>Pesquisa</p>
+						<div>
+							<div>
+								<span>3</span>
+							</div>
+							<p>PESQUISA</p>
+						</div>
+						<img src="img/check-solid.svg" alt="ícone de completado">
 					</div>
 
 					<div class="steps-item">
-						<span>4</span>
-						<p>FEEDBACK</p>
+						<div>
+							<div>
+								<span>4</span>
+							</div>
+							<p>FEEDBACK</p>
+						</div>
+						<img src="img/check-solid.svg" alt="ícone de completado">
 					</div>
 
 					<div class="steps-item disabled">
-						<span>5</span>
-						<p>QUANDO?</p>
+						<div>
+							<div>
+								<span>5</span>
+							</div>
+							<p>QUANDO?</p>
+						</div>
+						<img src="" alt="">
 					</div>
 
-					<div class="steps-item">
-						<span>6</span>
-						<p>CONFIRMAR</p>
+					<div class="steps-item disabled">
+						<div>
+							<div>
+								<span>6</span>
+							</div>
+							<p>CONFIRMAR</p>
+						</div>
+						<img src="" alt="">
 					</div>
-				</div>
 			</section>
 
 			<section id="feedback-conf-section">
-				<article>
+				<article id="feedback-info">
 					<h2>Configuração do feedback</h2>
 					<p>
 						Personalize e configure a página web que será aberta após o usuário acessar a pesquisa de pós-compra.
@@ -78,172 +110,226 @@
 				<article id="feedback-conf">
 					<h3>Feedback</h3>
 					<div>
-						<h2>Informações</h2>
-						<p>
-							Preencha os campos abaixo e visualize o resultado da tela.
-						</p>
-					</div>
+						<div id="feedback-container-info">
+							<h2>Informações</h2>
+							<p>
+								Preencha os campos abaixo e visualize o resultado da tela.
+							</p>
+						</div>
 
-					<div id="feedback-container">
-						<div id="logo-conf">
-							<p>Imagem da logo:</p>
-							<div>
+						<div id="feedback-container">
+							<p class="gc-1to2">Imagem da logo:</p>
+							<div class="gc-2to2" id="logo-conf">
 								<figure>
-									<img src="logo/group-17.svg" alt="logo">
-									<button>Alterar logo</button>
+									<img src="img/logo/group-17.svg" alt="logo">
+									<div class="">
+										<button>Alterar logo</button>
+									</div>
 								</figure>
-
 								<p>Requisitos: dimensões
 									<span>100x50px</span>, tamanho máximo
 									<span>20k</span>, formato
 									<span>PNG transparente</span>
 								</p>
 							</div>
-						</div>
 
-						<div id="title-conf">
-							<p>Título:</p>
-							<div class="input-text">
+							<p class="gc-1to2">Título:</p>
+							<div class="input-text gc-2to2 row" id="title-conf">
 								<input type="text" placeholder="Pesquisa de satisfação">
-								<p>
-									<span>30</span>caracteres restantes
+								<p class="characters-remaining">
+									<span>30</span> caracteres restantes
 								</p>
 							</div>
-						</div>
 
-						<div id="title-color-conf" class="color-input">
-							<p>Cor do texto do título:</p>
-							<div>
+							<p class="gc-1to2">Cor do texto do título:</p>
+							<div class="gc-2to2 row" id="title-color-conf">
 								<input type="text" placeholder="#222F51">
-								<div></div>
-							</div>
-						</div>
-
-						<div id="grades-conf">
-							<p>Notas:</p>
-							<div>
-								<figure>
-									<img src="grades/horrivel.svg" alt="ícone horrível">
-									<caption>Horrível</caption>
-								</figure>
-								<button>Alterar ícone</button>
+								<div class="color-square"></div>
 							</div>
 
-							<div>
-								<figure>
-									<img src="grades/ruim.svg" alt="ícone ruim">
-									<caption>Ruim</caption>
-								</figure>
-								<button>Alterar ícone</button>
+							<p class="gc-1to2">Notas:</p>
+							<div class="gc-2to2" id="container-emojis">
+								<div>
+									<figure class="img-and-caption">
+										<img src="img/grades/horrivel.svg" alt="ícone horrível">
+										<p>Horrível</p>
+									</figure>
+									<button>Alterar ícone</button>
+								</div>
+
+								<div>
+									<figure class="img-and-caption">
+										<img src="img/grades/ruim.svg" alt="ícone ruim">
+										<p>Ruim</p>
+									</figure>
+									<button>Alterar ícone</button>
+								</div>
+
+								<div>
+									<figure class="img-and-caption">
+										<img src="img/grades/razoavel.svg" alt="ícone razoável">
+										<p>Razoável</p>
+									</figure>
+									<button>Alterar ícone</button>
+								</div>
+
+								<div>
+									<figure class="img-and-caption">
+										<img src="img/grades/muito-bom-copy.svg" alt="ícone muito bom">
+										<p>Muito bom</p>
+									</figure>
+									<button>Alterar ícone</button>
+								</div>
+
+								<div>
+									<figure class="img-and-caption">
+										<img src="img/grades/excelente.svg" alt="ícone excelente">
+										<p>Excelente</p>
+									</figure>
+									<button>Alterar ícone</button>
+								</div>
+
+								<p>
+									Requisitos: dimenções
+									<span>74x74px</span>, tamanho máximo
+									<span>20k</span>, formato
+									<span>PNG transparente</span>
+								</p>
 							</div>
 
-							<div>
-								<figure>
-									<img src="grades/razoavel.svg" alt="ícone razoável">
-									<caption>Razoável</caption>
-								</figure>
-								<button>Alterar ícone</button>
-							</div>
-
-							<div>
-								<figure>
-									<img src="grades/muito-bom-copy.svg" alt="ícone muito bom">
-									<caption>Muito bom</caption>
-								</figure>
-								<button>Alterar ícone</button>
-							</div>
-
-							<div>
-								<figure>
-									<img src="grades/excelente.svg" alt="ícone excelente">
-									<caption>Excelente</caption>
-								</figure>
-								<button>Alterar ícone</button>
-							</div>
-							<p>
-								Requisitos: dimenções
-								<span>74x74px</span>, tamanho máximo
-								<span>20k</span>, formato
-								<span>PNG transparente</span>
-							</p>
-
-						</div>
-
-						<div id="grades-text-color-conf">
-							<p>Cor do texto das notas:</p>
-							<div class="color-input">
+							<p class="gc-1to2"> Cor do texto das notas:</p>
+							<div class="color-input gc-2to2 row" id="grades-text-color">
 								<input type="text" placeholder="#222F51">
-								<div></div>
+								<div class="color-square"></div>
 							</div>
-						</div>
 
-						<div id="comment-conf">
-							<p>Comentário:</p>
-							<div class="input-text">
+							<div id="satisfaction" class="gc-3to7">
+								<div class="menu-mac">
+									<div></div>
+									<div></div>
+									<div></div>
+								</div>
+
+								<div id="satisfaction-content-container">
+									<div>
+										<figure>
+											<img src="img/logo/group-17.svg" alt="logo">
+										</figure>
+
+										<div>
+											<h2>Pesquisa de satisfação</h2>
+											<p>
+												Responda a pesquisa abaixo sendo o mais sincero possível. Sua resposta e seus comentários ajudarão a
+												construir
+												sempre o melhor
+												produto para você.
+											</p>
+										</div>
+
+										<div id="satisfaction-img-container">
+
+											<div>
+												<figure class="img-and-caption">
+													<img src="img/grades/horrivel.svg" alt="ícone horrível">
+													<p>Horrível</p>
+												</figure>
+											</div>
+
+											<div>
+												<figure class="img-and-caption">
+													<img src="img/grades/ruim.svg" alt="ícone ruim">
+													<p>Ruim</p>
+												</figure>
+											</div>
+
+											<div>
+												<figure class="img-and-caption">
+													<img src="img/grades/razoavel.svg" alt="ícone razoável">
+													<p>Razoável</p>
+												</figure>
+											</div>
+
+											<div>
+												<figure class="img-and-caption">
+													<img src="img/grades/muito-bom-copy.svg" alt="ícone muito bom">
+													<p>Muito bom</p>
+												</figure>
+											</div>
+
+											<div>
+												<figure class="img-and-caption">
+													<img src="img/grades/excelente.svg" alt="ícone excelente">
+													<p>Excelente</p>
+												</figure>
+											</div>
+										</div>
+
+										<div>
+											<p>Gostaria de fornecer mais detalhes sobre o atendimento desta(e) vendedora(or)?</p>
+											<input type="text" placeholder="Escreva aqui">
+											<div class="green-submit-button">
+												<button>
+													Responder pesquisa
+													<div>
+														<i class="fas fa-play"></i>
+													</div>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<p class="gc-1to2">Comentário:</p>
+							<div class="input-text gc-2to6 row" id="comment-conf">
 								<input type="text" placeholder="Gostaria de fornecer mais detalhes sobre o atendimento desta(e) vendedora(or)?">
-								<p>
-									<span>30</span>caracteres restantes
+								<p class="characters-remaining">
+									<span>30</span> caracteres restantes
 								</p>
 							</div>
-						</div>
 
-						<div id="comment-text-color-conf">
-							<p>Cor do texto comentário:</p>
-							<div class="input-color">
+							<p class="gc-6to7">Cor do texto comentário:</p>
+							<div class="input-color gc-7to8 row" id="comment-text-color">
 								<input type="text" placeholder="#8B93A7">
-								<div></div>
+								<div class="color-square"></div>
 							</div>
-						</div>
 
-						<div id="button-text-conf">
-							<p>Botão:</p>
-							<div class="input-text">
+							<p class="gc-1to2">Botão:</p>
+							<div class="input-text gc-1to3 button-span-2 row" id="button-conf">
 								<input type="text" placeholder="Responder pesquisa">
-								<p>
-									<span>100</span>caracteres restantes
+								<p class="characters-remaining">
+									<span>100</span> caracteres restantes
 								</p>
 							</div>
-						</div>
 
-						<div id="button-text-color-conf">
-							<p>Cor do texto botão:</p>
-							<div class="input-color">
+							<p class="gc-3to4">Cor do texto botão:</p>
+							<div class="input-color gc-5to6 row" id="button-text-color">
 								<input type="text" placeholder="#39C881">
-								<div></div>
+								<div class="color-square"></div>
 							</div>
-						</div>
-					</div>
 
-					<div id="button-bg-color-conf">
-						<p>Cor do fundo botão:</p>
-						<div class="input-color">
-							<input type="text" placeholder="#39C881">
-							<div></div>
-						</div>
-					</div>
+							<p class="gc-6to7">Cor do fundo botão:</p>
+							<div class="input-color gc-7to8 row" id="button-bg-color">
+								<input type="text" placeholder="#39C881">
+								<div class="color-square"></div>
+							</div>
 
-					<div id="screen-bg-color-conf">
-						<p>Cor do fundo da tela:</p>
-						<div class="input-color">
-							<input type="text" placeholder="#F5F6FA">
-							<div></div>
-						</div>
-					</div>
+							<p class="gc-1to2">Cor do fundo da tela:</p>
+							<div class="input-color gc-2to8 row" id="screen-color">
+								<input type="text" placeholder="#F5F6FA">
+								<div class="color-square"></div>
+							</div>
 
-					<div id="screen-bg-color-conf">
-							<p>Cor do box de conteúdo:</p>
-							<div class="input-color">
+							<p class="gc-1to2">Cor do box de conteúdo:</p>
+							<div class="input-color gc-2to8 row">
 								<input type="text" placeholder="#FFFFF">
-								<div></div>
+								<div class="color-square"></div>
 							</div>
 						</div>
+					</div>
 				</article>
 			</section>
-
 		</main>
-		<button>Passo Anterior</button>
-		<button>Salvar como rascunho</button>
-		<button>Próximo Passo</button>
 	</div>
 </body>
 

@@ -1,15 +1,15 @@
 {
-    "name": "docker_web_app",
-    "version": "1.0.0",
-    "description": "Node.js on Docker",
-    "author": "Erick Henrique dos Santos <erick.santos@dito.com.br>",
-    "main": "src/server.js",
-    "scripts": {
-      "start": "npx nodemon src/server.js"
-    },
-    "dependencies": {
-      "express": "^4.16.1",
-      "nodemon": "^1.18.4"
-    }
+  "name": "docker_web_app",
+  "version": "1.0.0",
+  "description": "Node.js on Docker",
+  "author": "Erick Henrique dos Santos <erick.santos@dito.com.br>",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "npx nodemon src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1",
+    "font-awesome": "^4.7.0",
+    "nodemon": "^1.18.4"
   }
-  
+}
